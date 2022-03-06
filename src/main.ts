@@ -1,6 +1,10 @@
 import * as lib from "./tensor"
 
-let t: lib.Tensor = lib.Tensor.random([3, 3]);
-console.log(t);
-t = lib.Tensor.srandom([3, 3]);
-console.log(t);
+const shape: number[] = [3];
+
+const t1: lib.Tensor = lib.Tensor.srandom(shape);
+console.log(t1);
+const t2: lib.Tensor = lib.Tensor.range(shape).normalise();
+console.log(t2);
+
+console.log(lib.Tensor.dot(t1, t2));
