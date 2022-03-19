@@ -170,10 +170,10 @@ export class Tensor {
         dst._elements = copyArray<number>(src._elements);
         return dst;
     }
-    public static matmulvec(matrix: Tensor, vec: Tensor): Tensor {
-        if (!matrix.isMatrix()) throw new Error("input1 must be a matrix");
-        if (!vec.isColumnVector()) throw new Error("input2 must be a column vector");
-    }
+//    public static matmulvec(matrix: Tensor, vec: Tensor): Tensor {
+//        if (!matrix.isMatrix()) throw new Error("input1 must be a matrix");
+//        if (!vec.isColumnVector()) throw new Error("input2 must be a column vector");
+//    }
 }
 
 
